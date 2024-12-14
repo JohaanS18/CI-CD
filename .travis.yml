@@ -1,0 +1,11 @@
+lenguage: python
+python:
+  - "3.13.1" #Versión de python
+
+#Comandos para ejecutar antes del script
+before_script:
+  - echo "Preparando entorno para prebas..."
+
+#Comando para ejecutar las pruebas
+script:
+ - python -m unittest discover -s pruebas
